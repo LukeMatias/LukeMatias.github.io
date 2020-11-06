@@ -152,7 +152,7 @@ html {
   }
 
   75% {
-    content: "Ciclista";
+    content: "Estudiante";
   }
 
 }
@@ -167,7 +167,7 @@ html {
   }
 
   75% {
-    content: "Ciclista";
+    content: "Estudiante";
   }
 
 }
@@ -369,7 +369,7 @@ section.dark .section-title::after {
 }
 
 .service {
-  width: calc(25% - 20px);
+  width: calc(50% - 20px);
   text-align: center;
   border: 1px solid #48dbfb;
   border-radius: 6px;
