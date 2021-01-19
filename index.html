@@ -15,24 +15,15 @@
   <meta property="og:image" content="https://lukematias.github.io/imgs/bg-edit.jpg" />
   <title>Portfolio Web - Lucas Matías </title>
   <link rel="shortcut icon" href="imgs/laptop.png" type="image/x-icon">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css
-">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js
-"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-  <script src="app.js"></script>
-  
 </head>
 
 <body>
   <!-- Navbar  -->
-  <nav class="navbar">
-    <div class="inner-width">
+   <nav  id="nav"  class="navbar">
+    <div class="inner-width"> 
       <a href="" class="navbar__logo"></a>
       <button class="navbar__toggler ">
         <span></span>
@@ -83,8 +74,24 @@
       <div class="about__skills">
         <div class="about__skill">
           <div class="skill__info">
-            <span>Html</span>
-            <span>90%</span>
+            <span>React JS</span>
+            <i  class="fab fa-react"></i>
+          </div>
+          <div class="skill-bar html">
+          </div>
+        </div>
+        <div class="about__skill">
+          <div class="skill__info">
+            <span>Node JS</span>
+            <i class="fab fa-node-js"></i>
+          </div>
+          <div class="skill-bar html">
+          </div>
+        </div>
+        <div class="about__skill">
+          <div class="skill__info">
+            <span>Bootstrap</span>
+            <i class="fab fa-bootstrap"></i>
           </div>
           <div class="skill-bar html">
           </div>
@@ -92,35 +99,51 @@
         <div class="about__skill">
           <div class="skill__info">
             <span>CSS</span>
-            <span>50%</span>
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div class="skill-bar html">
+          </div>
+        </div>
+        <div class="about__skill">
+          <div class="skill__info">
+            <span>Tailwind</span>
+            <i class="far fa-file-code"></i>
+          </div>
+          <div class="skill-bar html">
+          </div>
+        </div>
+        <div class="about__skill">
+          <div class="skill__info">
+            <span>Html</span>
+            <i class="fab fa-html5"></i>
           </div>
           <div class="skill-bar css"></div>
         </div>
         <div class="about__skill">
           <div class="skill__info">
             <span>WordPress</span>
-            <span>50%</span>
+            <i class="fab fa-wordpress-simple"></i>
           </div>
           <div class="skill-bar wordpress"></div>
         </div>
         <div class="about__skill">
           <div class="skill__info">
             <span>JavaScript</span>
-            <span>10%</span>
+            <i class="fab fa-js-square"></i>
           </div>
           <div class="skill-bar javascript"></div>
         </div>
         <div class="about__skill">
           <div class="skill__info">
             <span>Git</span>
-            <span>20%</span>
+            <i class="fab fa-git-alt"></i>
           </div>
           <div class="skill-bar git"></div>
         </div>
         <div class="about__skill">
           <div class="skill__info">
             <span>GitHub</span>
-            <span>20%</span>
+            <i class="fab fa-github"></i>
           </div>
           <div class="skill-bar git-hub"></div>
         </div>
@@ -213,21 +236,13 @@
         </div>
         <div class="item">
           <i class="fas fa-envelope"></i>
-          lucasmatias@lukeintro.com
+          lucasmatiasweb@lukeintro.com
         </div>
         <div class="item">
           <i class="fas fa-map-marker-alt"></i>
           Ushuaia, Tierra del Fuego - Argentina
         </div>
       </div>
-      <!-- <form action="receive.php" method="POST" class="contact-form">
-        <input type="text" name="name" required="required" pattern="[A-za-z]+" class="nameZone"
-          placeholder="Nombre completo">
-        <input type="email" name="email" required="required" class="emailZone" placeholder="Tu Email">
-        <input type="text" name="subjet" required="required" class="subjetZone" placeholder="Asunto">
-        <textarea name="message" id="" required="required" class="messageZone" placeholder="Mensaje"></textarea>
-        <input type="submit" value="Enviar " class="btn">
-      </form> -->
     </div>
   </section>
 
@@ -248,6 +263,8 @@
 
   <!-- Go Top BTN -->
   <button class="goTop fas fa-arrow-up"></button>
+  <script src="app.js"></script>  
+
 
 </body>
 

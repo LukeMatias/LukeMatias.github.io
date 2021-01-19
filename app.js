@@ -1,29 +1,45 @@
-$(document).ready(function () {
-  $(window).scroll(function () {
-    if (this.scrollY > 20) {
-      $(".navbar").addClass("sticky");
-      $(".goTop").fadeIn();
-    } else {
-      $(".navbar").removeClass("sticky");
-      $(".goTop").fadeOut();
-    }
-  });
-  $(".goTop").click(function () {
-    scroll(0, 0)
-  });
+// set Const to catch the elements
+const $Nav = document.getElementById("nav");
+const $NavMenu = document.querySelector(".navbar__menu")
+const $NavToggle = document.querySelector(".navbar__toggler");
+let toggle= false;
 
+// Onclik menu
 
-  $(".navbar__toggler").click(function () {
-    $(this).toggleClass("navbar__toggler-active");
-    $(".navbar__menu").toggleClass("navbar__active");
-  });
+$NavToggle.addEventListener("click", ()=> {
+  if (toggle === false) {    
+    $NavToggle.classList.add("navbar__toggler-active");
+    $NavMenu.style.setProperty("right","0");
+    toggle = true;
+    
+  } else  {
+    $NavToggle.classList.remove("navbar__toggler-active");
+    $NavMenu.style.setProperty("right","-100%");
+    toggle = false;
 
-  $(".works").magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    gallery: {
-      enabled: true
-    }
-  });
-
+  };  
 });
+
+
+// OnClick scroll
+
+let scrollMove = this;
+scrollMove.addEventListener("scroll",()=>{
+  if (this.scrollY > 20) {
+    $Nav.classList.add("sticky");
+    $Arrow.style.setProperty("display","inline-block");
+    
+  } else {
+    $Nav.classList.remove("sticky");
+    $Arrow.style.setProperty("display","none");    
+  }
+  
+});
+
+
+// onClick arrow scroll top
+const $Arrow = document.querySelector(".goTop");
+$Arrow.addEventListener("click",()=>{
+  scrollMove.scroll(0,0);
+})
+
